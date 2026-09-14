@@ -41,6 +41,7 @@ for length in prompt_lengths:
                 max_new_tokens=max_new_tokens,
                 temperature=1.0,
                 top_k=200,
+                use_cache=True
             )
 
     torch.mps.synchronize()
@@ -57,6 +58,7 @@ for length in prompt_lengths:
                 max_new_tokens=max_new_tokens,
                 temperature=1.0,
                 top_k=200,
+                use_cache=True
             )
 
         torch.mps.synchronize()
